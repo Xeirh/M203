@@ -35,3 +35,30 @@ H1-Mod / H2M-Mod Menu Base
 - Improved `is_admin()`
 
 <img src="image/shader.png" width=1012>
+
+# INSTALLING
+- Aurora / H1-M
+  - Download and drop into the `h1-mod/scripts/mp` directory and that is it, your done and ready to play.
+    - If missing `scripts/mp` just create the folders.
+
+- Horizon / H2M-M
+  - Download and drop `user_scripts` inside `h2m-mod` directory. `H2M-M` does have a `scripts/mp` directory but anything inside this will be deleted after game restart.
+    - If existing `user_scripts` directory, you can just throw the files into it. Note some other scripts might confict with the menu.
+
+- Horizon Private Match Bypass
+  - Place the file that is included inside `gametypes` into the `h2m-mod/maps/mp/gametypes` directory and after that, you're set to play in private match.
+    - If missing `maps/mp/gametypes`, fear not, just create the folder and continue.
+
+- Aurora / Horizon Dedicated Session
+  - `level.private_match` will auto switch the verification system from `host check` to `guid check` depending on the session state, so you honestly don't have to do any work other than obtaining your `guid`.
+    - How to obtain `guid`?
+      - With Aurora you can use the built in function `print()`, with Horizon this is disabled, so you will have to use `self iprintln()` and manually type the guid.
+
+    - Example
+      - `print( self.guid );`
+      - `self iprintln( self.guid );`
+
+    - Place the `guid` into `level.guid_list`, this is an array so it can hold multiple `guids`, being friends, members ect...
+      - After this enjoy.
+
+<img src="image/toggle.png" width=1012>
