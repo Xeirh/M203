@@ -31,7 +31,7 @@ H1-Mod / H2M-Mod Menu Base
 - Added `Auto Archive`, help juice out a few more elements.
 - Added `Shader Option`, custom shaders, adjustable width and height.
 - Added `Dynamic Description`, not like the config string limit is 230.
-- Improved `level.private_match`, the system that will handle the accesss depending on the session.
+- Improved `level.private_match`, the system that will handle the access depending on the session.
 - Improved `is_admin()`, for dedicated use.
 
 <img src="image/shader.png" width=1012>
